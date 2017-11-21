@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Modal test</title>
+    <meta name="theme-color" content="#317EFB"/>
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="js/IconicJsMultiselect.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/IconicJsMultiselect.css" >
+    <script src="https://use.fontawesome.com/53cea1337e.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+</head>
+<body>
+<h1>Hello, world! <small>OK?</small></h1>
+<div class="row">
+    <div class="col-sm-4">
+        <form class="form">
+            <div class="form-group">
+                <label> EΕπιλέξτε</label>
+                <input type="text" id="filter">
+                <!--<script>-->
+                    <!--$(function(){-->
+                        <!--$("#filter").on("change, keyup", function(){-->
+                            <!--var filter = $(this).val().toLowerCase();-->
+
+                            <!--var options = $("#pedio1 option");-->
+                            <!--for (var i = 0; i < options.length; i++)-->
+                            <!--{-->
+                                <!--if (options[i].text.toUpperCase().indexOf(filter) < 0)-->
+                                    <!--$(options[i]).css("display", "none");-->
+                                <!--else-->
+                                    <!--$(options[i]).css("display", "block");-->
+                            <!--}-->
+                        <!--});-->
+                    <!--});-->
+                <!--</script>-->
+                <select id="pedio1" multiple="multiple" class="form-control modalSelect" data-field="pedio1" data-title="Επιλεξτε τα ">
+                    <!--<option value="1">Cheese</option>-->
+                    <!--<option value="2">Tomatoes</option>-->
+                    <!--<option value="3" selected="selected">Mozzarella</option>-->
+                    <!--<option value="4">Mushrooms</option>-->
+                    <!--<option value="5">Pepperoni</option>-->
+                    <!--<option value="6">Onions</option>-->
+
+                </select>
+
+                <select id="pedio2" multiple="multiple" class="form-control modalSelect" data-field="pedio2" data-title="Επιλεξτε τα ">
+                    <!--<option value="1">Cheese</option>-->
+                    <!--<option value="2">Tomatoes</option>-->
+                    <!--<option value="3" selected="selected">Mozzarella</option>-->
+                    <!--<option value="4">Mushrooms</option>-->
+                    <!--<option value="5">Pepperoni</option>-->
+                    <!--<option value="6">Onions</option>-->
+
+                </select>
+
+                <a class="btn btn-default modalSelect" href="#"
+                   data-field="pedio3"
+                   data-title="Dokimi edw"
+                   data-prompt="prompt"
+                   data-empty-prompt="empty prompt"
+                >test</a>
+                <select id="pedio3" multiple_="_multiple"  class=" form-control" data-field="pedio3" data-title="Επιλεξτε τα ">
+                    <optgroup label="test">
+                        <option value="1">Cheese</option>
+                        <option value="2">Tomatoes</option>
+                        <option value="3">Mozzarella</option>
+                        <option value="4">Mushrooms</option>
+                        <option value="5">Pepperoni</option>
+                        <option value="6">Onions</option>
+                    </optgroup>
+
+                    <optgroup label="test">
+                        <option value="1">Cheese</option>
+                        <option value="2">Tomatoes</option>
+                        <option value="3">Mozzarella</option>
+                        <option value="4">Mushrooms</option>
+                        <option value="5">Pepperoni</option>
+                        <option value="6">Onions</option>
+                    </optgroup>
+                </select>
+
+
+            </div>
+            <div id="modalSelector"></div>
+        </form>
+    </div>
+</div>
+
+<script>
+//    $(function(){
+//        for (var x = 0 ; x < 1500; x++)
+//        {
+//            var opt = $("<option/>").val(x).text("Epilogi a " + x);
+//            opt.appendTo("#pedio1");
+//            var opt2 = $("<option/>").val(x).text("Epilogi b " + x);
+//            opt2.appendTo("#pedio3");
+//            var opt3 = $("<option/>").val(x).text("Epilogi c " + x);
+//            opt3.appendTo("#pedio2");
+//        }
+//    });
+
+</script>
+
+</body>
+</html>
